@@ -1,0 +1,110 @@
+/* The biggest box */
+#browser {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background-color: pink;
+}
+
+/* header area*/
+#header {
+    position: relative;
+    top: 2%;
+    left: 1%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#indexImg {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#banner {
+    position:  absolute;
+    height: 50px;
+    width: 400px;
+    top: 5%;
+    right: 5%;
+    float: right;
+    background-color: blue;
+    z-index: 1;
+    opacity: 0.4;
+
+}
+
+/* body area */
+#body {
+    position: relative;
+    background-color: purple;
+    height: 500px;
+    width: 98%;
+    top: 5%;
+    left: 1%;
+}
+
+#article {
+    position: relative;
+    background-color: orange;
+    height: 90%;
+    width: 60%;
+    top: 5%;
+    left: 1%;
+    float: left;
+}
+
+.articleSingle {
+    background-color: blue;
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.articleImg {
+    width: 30%;
+    height: 100%;
+}
+
+.articleAbbr {
+    float: right;
+    width: 70%;
+    height: 100%;
+}
+
+#other {
+    position: relative;
+    background-color: darkslategray;
+    height: 90%;
+    width: 35%;
+    top: 5%;
+    right: 1%;
+    float: right;
+}
+
+#personalInfo {
+    position: relative;
+    background-color: whitesmoke;
+    height: 100px;
+    width: 100%;
+}
+
+.function {
+    position: relative;
+    background-color: red;
+    height: 100px;
+    width: 100%;
+}
+
+/* footer area */
+#footer {
+    position: relative;
+    background-color: yellow;
+    height: 200px;
+    width: 98%;
+    top: 5%;
+    left: 1%;
+}
