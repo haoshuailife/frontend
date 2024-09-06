@@ -1,33 +1,34 @@
 /* The biggest box */
 #browser {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     height: auto;
     width: 100%;
-    background-color: pink;
+    background-color: ghostwhite;
 }
+
 
 /* header area*/
 #header {
-    position: relative;
-    top: 2%;
-    left: 1%;
     height: 100%;
-    width: 100%;
-    background-color: black;
+    width: 98%;
+    background-color: ghostwhite;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #indexImg {
     position: relative;
     width: 100%;
     height: auto;
+
 }
 
 #banner {
-    position:  absolute;
+    position: absolute;
     height: 50px;
-    width: 400px;
+    width: 550px;
     top: 5%;
     right: 5%;
     float: right;
@@ -36,32 +37,67 @@
     opacity: 0.4;
 
 }
-
-/* body area */
-#body {
-    position: relative;
-    background-color: purple;
-    height: 500px;
-    width: 98%;
+#blog-name{
+    position: absolute;
+    height: 50px;
+    width:100px;
     top: 5%;
-    left: 1%;
+    left: 5%;
+    background-color: blue;
+    z-index: 1;
+    opacity: 0.4;
 }
 
-#article {
-    position: relative;
-    background-color: orange;
-    height: 90%;
-    width: 60%;
-    top: 5%;
-    left: 1%;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
     float: left;
 }
 
-.articleSingle {
-    background-color: blue;
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+/* body area */
+#body {
+    background-color: ghostwhite;
+    max-height: 1000px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#articleList {
     position: relative;
-    width: 100%;
-    height: 100px;
+    background-color: ghostwhite;
+    height: 90%;
+    width: 60%;
+    top: 5%;
+    float: left;
+    margin-left: 10%;
+}
+
+.article {
+    background-color: green;
+    position: relative;
+    width: 96%;
+    height: 200px;
+    margin: 20px;
 }
 
 .articleImg {
@@ -69,42 +105,157 @@
     height: 100%;
 }
 
-.articleAbbr {
+.articleInfo {
+    background-color: white;
+    position: relative;
     float: right;
     width: 70%;
     height: 100%;
 }
 
+.articleTitle {
+    position: relative;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+}
+.articleTitle a{
+    font-size: 20px;
+    font-family: Microsoft YaHei, serif;
+}
+.articleTag span{
+    font-size: 13px;
+}
+.ellipsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.split-line-vertical {
+    width: 2px;           /* 线的宽度 */
+    height: 15px;        /* 线的高度，可以根据需要调整 */
+    background-color: grey; /* 线的颜色 */
+    font-family: "Microsoft YaHei", serif;
+    /* 线的上下外边距，可以根据需要调整 */
+    margin: auto 5px;
+}
+
+.articleTag {
+    background-color: white;
+    position: relative;
+    left: 10%;
+    top: 18%;
+    width: 80%;
+    display: flex;
+}
+
+.articleAbbr {
+    background-color: white;
+    position: relative;
+    left: 10%;
+    top: 23%;
+    width: 80%;
+}
+
 #other {
     position: relative;
-    background-color: darkslategray;
+    background-color: ghostwhite;
     height: 90%;
-    width: 35%;
+    width: 20%;
     top: 5%;
-    right: 1%;
     float: right;
+    margin-right: 10%;
 }
 
 #personalInfo {
     position: relative;
-    background-color: whitesmoke;
-    height: 100px;
+    background-color:white ;
+    height: 320px;
     width: 100%;
+    margin: auto;
+}
+
+#avatar {
+    position:relative;
+    top:10%;
+    height: 110px;
+    width: 110px;
+    background-color: white;
+    margin: auto;
+}
+
+#avatar img{border-radius: 50%}
+
+#avatar img {
+    height: 110px;
+    width: 110px;
+}
+
+#motto {
+    position:relative;
+    top:20%;
+    margin: auto;
+    text-align: center;
+}
+.article-statistics-table{
+    position: relative;
+    top: 20%;
+    margin: 0 auto;
+}
+.article-statistics-table td{
+    padding:10px 20px;
+}
+
+.article-statistics-table td:hover {
+background-color: darkgrey;
 }
 
 .function {
     position: relative;
-    background-color: red;
+    background-color: white;
     height: 100px;
     width: 100%;
+    margin: 10px auto;
+
+}
+.function .title{
+    display:flex;
+    align-items: center;
+}
+
+#other .function p{
+    text-indent: 2ch;
+}
+
+#other .function a{
+    text-indent: 1ch;
+}
+
+.function .title::before {
+    content: ''; /* 假设是Icon Font的编码 */
+    font-family: 'IconFont';
+    display: inline-block;
+    padding-left: 2ch; /* 模拟缩进 */
 }
 
 /* footer area */
 #footer {
-    position: relative;
-    background-color: yellow;
-    height: 200px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 100px;
     width: 98%;
-    top: 5%;
-    left: 1%;
+    overflow: hidden;
+}
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
 }
